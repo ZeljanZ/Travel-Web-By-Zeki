@@ -1,0 +1,269 @@
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #ffff;
+    z-index: 2;
+
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        padding: 15px 10px;
+        margin: 0 200px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        // box-shadow: 4px 4px 40px #111;
+        
+        .logo{
+
+            width: 150px;
+            height: 60px;
+        }
+
+        .toggle{
+            display: none; //nevidljiv, na manjim ekreanima podesi da se vidi
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: url('../img/icons8-menu-24.png');
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: center;
+            cursor: pointer;
+            
+        }
+        .toggle.active{
+            background: url('../img/icons8-delete-24.png');
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: center;
+            cursor: pointer;
+        }
+    }
+    .menu-wrapper{
+        nav{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: -210px;
+                list-style: none;
+                padding-right: 4vw;
+                
+                li{
+                    
+                    position: relative;
+                    a{
+                        text-decoration: none;
+                        margin: 0 10px;
+                        color: black;
+                        font-weight: 700;
+                        padding: 32px 15px;
+
+                        &:hover{
+                            color: black;
+                            background-color: #f1f1f1;
+                        }
+                        &:hover::before{
+                            width: 82%;
+                        }
+                        &:before{
+                            content: "";
+                            display: block;
+                            height: 5px;
+                            width: 0%;
+                            bottom: -32px;
+                            background-color: #ff5702;
+                            position: absolute;
+                            transition: all ease-in-out 250ms;
+                            margin: 0 0 0 9%;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .login-wrapper{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+            
+            li{
+                position: relative;
+                list-style: none;
+                a{
+                        text-decoration: none;
+                        margin: 0 9px;
+                        color: black;
+                        font-weight: 700;
+                        padding: 32px 15px;
+                        
+                        &:hover{
+                            color: black;
+                            background-color: #f1f1f1;
+                        }
+                        &:hover::before{
+                            width: 82%;
+                        }
+                        &:before{
+                            content: "";
+                            display: block;
+                            height: 5px;
+                            width: 0%;
+                            bottom: -32px;
+                            background-color: #ff5702;
+                            position: absolute;
+                            transition: all ease-in-out 250ms;
+                            margin: 0 0 0 9%;
+                        }
+                }
+            }
+            .lang{
+                a{
+                    color: #ff5702;
+                }
+            }
+        }
+
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #03a8f4d8;
+        mix-blend-mode: overlay;
+    }
+
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+    .text{
+        position: relative;
+        z-index: 10;
+
+        h2{
+            font-size: 6em;
+            text-transform: capitalize;
+            font-weight: 600;
+            line-height: 1.3em;
+            margin-top: -10px;
+        }
+        p{
+            font-size: 1.2em;
+            margin: 20px 0;
+            font-weight: 400;
+            max-width: 450px;
+        }
+
+        .button{
+            margin-top: 40px;
+
+
+            a{
+                display: inline-block;
+                font-size: 1em;
+                background-color:#ff5702;
+                padding: 10px 30px;
+                color: rgb(255, 254, 254);
+                margin-top: 10px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                transition: 0.2s;
+                border-radius: 5px;
+
+                &:hover{
+                    letter-spacing: 6px;
+                }
+                &:last-of-type{
+                    margin-left: 10px;
+                    background-color: rgba(255, 255, 255, 0);
+                    border: 1px solid white;
+                    color: white;
+                }
+            }
+        }
+    }
+    .social{
+        position: absolute;
+        bottom: 20px;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            list-style: none;
+
+            a{
+                display: inline-block;
+                filter: invert(1);//menja crnu ikonicu u belu boju
+                transform: scale(0.5);
+                transition: 0.5s;
+
+                &:hover{
+                    transform: scale(0.5) translateY(-25px);
+                }
+                img{
+                    width: 60px;
+                }
+            }
+        }
+    }
+    .right-text{
+        z-index: 10;
+        max-width: 400px;
+    }
+
+    .right-text{
+                position: absolute;
+                bottom: 150px;
+                right: 420px;
+        .text-normal{
+            position: relative;
+            .symbol{
+                font-size: 255px;
+                position: absolute;
+                top: -130px;
+                left: -110px;
+                color: #ffffff62;
+                
+            }
+
+            h4{
+                position: absolute;
+                top: 0px;
+                font-size: 1.2rem;
+            }
+            p{
+                padding: 15px 0;
+            }
+
+        }
+        .text-vertical{
+            color: rgb(255, 255, 255);
+        }
+    }
+}
