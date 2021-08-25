@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <section class="showcase">
         <header>
-            <img class="logo" src="img/company-icon.png" alt="">
+            <!-- <img class="logo" src="img/company-icon.png" alt=""> -->
             
             <div class="menu-wrapper">
+                <img class="logo" src="img/company-icon.png" alt="">
+
                 <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Discover</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Help</a></li>
+                    <ul class="tab-items">
+                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">Home</a></li>
+                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">Discover</a></li>
+                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">About us</a></li>
+                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">Contact</a></li>
+                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">Help</a></li>
                     </ul>
                 </nav>
             </div>
@@ -63,12 +66,60 @@
                     exercitationem eligendi!</p>
             </div>
             <div class="text-vertical">
-                <img src="img" alt="ZZeki">
-                <p>Jamie Diaz</p>
+                <img src="img/Donald_Trump_circle.png" alt="ZZeki">
+                <p class="name">Zeljan Zivkov</p>
                 <p>Serbia</p>
             </div>
         </div>
     </section>
+    <div class="clearfix"></div>
+    <section class="destinations">
+        <div class="wrapper">
+            <div class="text-destination">
+                <h2>Explore</h2>
+                <h3>Most popular destinations</h3>
+                <p>Take a look at the Best Places to Travel in 2021 for additional inspiration. 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                    esse nulla assumenda perferendis autem quisquam dolores reiciendis 
+                    laudantium maiores voluptas et Praesentium.</p>
+                    <div class="button">
+                        <a href="#">Explore All</a>
+                    </div>
+                </div>
+            <div class="slider-destination">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="img/Vrsac.jpg">
+                        <!-- <p class="text1">Vrsac, Serbia</p> -->
+                        <img src="img/NoviSad.jpg">
+                        <!-- <p class="text2">Novi Sad, Serbia</p> -->
+                        <img src="img/VaxjoSweden.jpg">
+                        <!-- <p class="text3">Vaxjo, Sweden</p> -->
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="img/amsterdam.jpg" alt="Holland">
+                        <!-- <p class="text1">Amsterdam, Holland</p> -->
+                        <img src="img/frankfurt.jpg" alt="germany">
+                        <!-- <p class="text2">Frankfurt, Germany</p> -->
+                        <img src="img/paris.jpg" alt="FranceParis">
+                        <!-- <p class="text3">Paris, France</p> -->
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/nav.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>

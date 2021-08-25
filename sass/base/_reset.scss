@@ -13,3 +13,29 @@
 a{
     text-decoration: none;
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.button{
+    margin-top: 40px;
+
+    a{
+        display: inline-block;
+        font-size: 1em;
+        background-color:#f05a28 !important;
+        padding: 10px 30px;
+        color: rgb(255, 254, 254);
+        margin-top: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.2s;
+        border-radius: 5px;
+
+        &:hover{
+            letter-spacing: 6px;
+        }
+        
+    }
+}

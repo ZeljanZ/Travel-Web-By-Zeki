@@ -1,0 +1,32 @@
+.destinations{
+    height: 77vh;
+    background-color: #f7f7f7;
+    z-index: 0;
+    padding: 120px 0px 200px 200px;
+
+    .wrapper{
+        display: flex;
+
+        .text-destination{
+            padding-top: 70px;
+            h2{
+                font-size: 89px;
+                color: #66656510;
+            }
+            h3{
+                font-size: 33px;
+                margin-top: -67px;
+                color: #575756de;
+            }
+            p{
+                padding-top: 40px;
+                max-width: 600px;
+            }
+        }
+
+        .slider-destination{
+            margin-left: 120px;
+        }
+    }
+
+}
