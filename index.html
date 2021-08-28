@@ -91,21 +91,37 @@
                 <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
-                        <img src="img/Vrsac.jpg">
-                        <!-- <p class="text1">Vrsac, Serbia</p> -->
-                        <img src="img/NoviSad.jpg">
-                        <!-- <p class="text2">Novi Sad, Serbia</p> -->
-                        <img src="img/VaxjoSweden.jpg">
-                        <!-- <p class="text3">Vaxjo, Sweden</p> -->
+                        <div class="img-container">
+                            <div class="img-wrapper">
+                                <label class="text1" for="img1">Vrsac, Serbia</label>
+                                <img id="img1" src="img/Vrsac.jpg">
+                            </div>
+                            <div class="img-wrapper">
+                                <label class="text2" for="img2">Novi Sad, Serbia</label>
+                                <img id="img2" src="img/NoviSad.jpg">
+                            </div>
+                            <div class="img-wrapper">
+                                <label class="text3" for="img3">Vaxjo, Sweden</label>
+                                <img id="img3" src="img/VaxjoSweden.jpg">
+                            </div>
+                        </div>
                     </div>
                 
                     <div class="mySlides fade">
-                        <img src="img/amsterdam.jpg" alt="Holland">
-                        <!-- <p class="text1">Amsterdam, Holland</p> -->
-                        <img src="img/frankfurt.jpg" alt="germany">
-                        <!-- <p class="text2">Frankfurt, Germany</p> -->
-                        <img src="img/paris.jpg" alt="FranceParis">
-                        <!-- <p class="text3">Paris, France</p> -->
+                        <div class="img-container">
+                            <div class="img-wrapper">
+                                <label class="text1" for="img4">Amsterdam, Holland</label>
+                                <img id="img4" src="img/amsterdam.jpg">
+                            </div>
+                            <div class="img-wrapper">
+                                <label class="text2" for="img5">Frankfurt,Germany</label>
+                                <img id="img5" src="img/frankfurt.jpg">
+                            </div>
+                            <div class="img-wrapper">
+                                <label class="text3" for="img6">Paris, France</label>
+                                <img id="img6" src="img/paris.jpg">
+                            </div>
+                        </div>
                     </div>
                 
                     <!-- Next and previous buttons -->
@@ -113,12 +129,63 @@
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
                     <br>
-
                 </div>
             </div>
         </div>
     </section>
+    <section class="summer-tours">
+        <h2>Available Summer Tours</h2>
 
+
+        <div class="toures">
+            <div class="toure">
+                <img src="img/cityHiking.png" alt="cityHiking">
+                <div class="text-wrapper">
+                    <h3>City Hiking Tour (3 hours)</h3>
+                    <p>Get onboard one of our Round City Cable Car Tour.</p>
+                </div>
+                <div class="price">
+                    <p>$45.00</p>
+                    <a href="#">Book</a>
+                </div>
+            </div>
+            <div class="toure">
+                <img src="img/cityHiking02.png" alt="cityHiking">
+                <div class="text-wrapper">
+                    <h3>City Hiking Tour (1.5 hours)</h3>
+                    <p>Get onboard one of our Round City Cable Car Tour.</p>
+                </div>
+                <div class="price">
+                    <p>$55.00</p>
+                    <a href="#">Book</a>
+                </div>
+            </div>
+            <div class="toure">
+                <img src="img/cityHiking03.png" alt="cityHiking">
+                <div class="text-wrapper">
+                    <h3>City Hiking Tour (3 hours)</h3>
+                    <p>Get onboard one of our Round City Cable Car Tour.</p>
+                </div>
+                <div class="price">
+                    <p>$45.00</p>
+                    <a href="#">Book</a>
+                </div>
+            </div>
+            <div class="toure">
+                <img src="img/cityHiking04.png" alt="cityHiking">
+                <div class="text-wrapper">
+                    <h3>City Hiking Tour (2 hours)</h3>
+                    <p>Get onboard one of our Round City Cable Car Tour.</p>
+                </div>
+                <div class="price">
+                    <p>$85.00</p>
+                    <a href="#">Book</a>
+                </div>
+            </div>
+            <img class="imgSummer" src="img/travel_illustration_4x.png.png" alt="travelIlustration">
+
+        </div>
+    </section>
     <script src="js/nav.js"></script>
     <script src="js/slider.js"></script>
 </body>

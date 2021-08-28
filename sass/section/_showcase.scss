@@ -2,7 +2,7 @@
     // position: absolute;
     width: 100%;
     min-height: 100vh;
-    padding: 200px;
+    padding: 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,22 +179,21 @@
     }
 
     .text{
-        position: relative;
         z-index: 10;
-        margin-left: -0px;
-
         h2{
             font-size: 6em;
             text-transform: capitalize;
             font-weight: 600;
             line-height: 1.3em;
-            margin-top: -10px;
+            margin-top: 50px;
+            text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
         }
         p{
             font-size: 1.2em;
             margin: 20px 0;
             font-weight: 400;
             max-width: 450px;
+            text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
         }
 
         .button{
@@ -239,30 +238,33 @@
     .right-text{
         z-index: 10;
         max-width: 400px;
+        text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
     }
 
     .right-text{
                 position: absolute;
                 bottom: 150px;
                 right: 420px;
+                
         .text-normal{
             position: relative;
             .symbol{
+                z-index: -1;
                 font-size: 255px;
                 position: absolute;
                 top: -150px;
                 left: -100px;
-                color: #ffffff7a;
-                
+                color: #ffffff54;
             }
 
             h4{
                 position: absolute;
                 top: 5px;
                 font-size: 1.2rem;
+                text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
             }
             p{
-                
+                text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
                 padding: 35px 0;
             }
 
