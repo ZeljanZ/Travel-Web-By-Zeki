@@ -11,29 +11,36 @@
     }
 
     .toures{
-        position: relative;
+        position: absolute;
         width: 100%;
+        height: 250px;
         .toure{
             display: flex;
-            width: 45%;
+            height: 50%;
+            width: 47%;
+            min-width: 600px;
             padding: 0px 10px;
             background-color: white;
-            margin-top: 40px;
-            margin-left: 210px;//here over
+            margin-top: 2%;
+            margin-left: 12%;//here over
             border-radius: 8px;
             position: relative;
             z-index: 30;
             transition: 0.7s;
             &:hover{
-                width: 50%;
+                width: 52%;
                 padding: 0px 50px;
                 border-radius: 50px;
                 .price{
                     border-left: 10px dotted #56565741;
+                    a{
+                        visibility: visible;
+                    }
                 }
             }
 
             img{
+                height: 120px;
                 width: 140px;
                 padding: 20px 30px;
             }
@@ -59,6 +66,7 @@
                 border-left: 10px dotted #56565741;
                 letter-spacing: 1px;
                 a{
+                    visibility: hidden;
                     display: inline-block;
                     margin-top: 10px;
                     padding: 2px 17px;
@@ -69,13 +77,12 @@
                 }
             }
         }
-        .imgSummer{
-            position: absolute;
-            width: 
-            55%;
-            top: -50px;
-            right: -130px;
-            z-index: 1;
-        }
+    }
+    .imgSummer{
+        position: absolute;
+        width: 900px;
+        top: 0px;
+        right: 0px;
+        z-index: 10;
     }
 }
