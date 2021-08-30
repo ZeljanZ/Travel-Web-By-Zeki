@@ -1,0 +1,83 @@
+footer{
+    height: 45vh;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #318c8c;
+    padding: 100px 220px;
+    .footer-wrapper{
+        display: flex;
+
+        .company-info{
+            img{
+                width: 140px;
+                margin-bottom: 20px;
+            }
+            p{
+                margin-bottom: 20px;
+                color: #c5c1c1;
+            }
+        }
+        .footer-links{
+            display: flex;
+            position: relative;
+            left: 230px;
+            .row{
+                padding-right: 8%;
+                h3{
+                    color: rgba(255, 255, 255, 0.897);
+                }
+                ul{
+                    margin-top: 50px;
+                    li{
+                        margin-bottom: 20px;
+                        list-style: none;
+                        width: 230px;
+
+                        a{
+                            color: #c5c1c1;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.bottom-footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2f797a;
+    padding: 20px;
+    height: 70px;
+    p{
+        color: #c5c1c1;
+        letter-spacing: 1px;
+    }
+    .social{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            list-style: none;
+
+            a{
+                display: inline-block;
+                filter: invert(1);//menja crnu ikonicu u belu boju
+                transform: scale(0.5);
+                transition: 0.5s;
+
+                &:hover{
+                    transform: scale(0.5) translateY(-25px);
+                }
+                img{
+                    width: 60px;
+                }
+            }
+        }
+    }
+}
