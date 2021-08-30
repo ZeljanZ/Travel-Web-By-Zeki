@@ -1,0 +1,25 @@
+.aboutus{
+    height: 100vh;
+    padding: 5% 15%;
+    width: 100%;
+
+    .about-wrapper{
+        width: 85%;
+        letter-spacing: 0.5px;
+        font-size: 1.1rem;
+        h2,h3{
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+        p{
+            padding-bottom: 20px;
+        }
+        ul{
+            padding: 20px 20px;
+            li{
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

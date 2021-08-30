@@ -1,0 +1,91 @@
+.contact{
+    height: 80vh;
+    width: 100%;
+    background-color: #f7f7f7 ;
+    h2{
+        text-align: center;
+        font-size: 2.2rem;
+        color: #4b4b4a;
+        padding-top: 70px;
+    }
+    .contact-wrapper{
+        display: flex;
+
+        img{
+            padding-left: 100px;
+            width: 50%;
+        }
+        .forma-holder{
+            display: inline-block;
+            padding: 50px 100px;
+            
+            form{
+                label{
+                    display: inline-block;
+                    padding: 30px 10px 10px 5px;
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: #575756;
+                    
+                }
+                input{
+                    height: 55px;
+                    width: 150%;
+                    padding: 20px;
+                    border-radius: 5px;
+                    border: 1px solid #4747476e;
+                    font-size: 17px;
+                    background-color:#f7f7f7;
+                    &:hover{
+                        border: 2px solid #f05a28;
+                    }
+                }
+                textarea{
+                    height: 140px;
+                    width: 150%;
+                    padding: 15px;
+                    border-radius: 5px;
+                    border: 1px solid #47474767;
+                    font-size: 17px;
+                    background-color:#f7f7f7;
+
+                    &:hover{
+                        border: 2px solid #f05a28;
+                    }
+                }
+                .checkbox-input{
+                    position:absolute;
+                    width: 15px;
+                    padding: 15px;
+                }
+                p{
+                    padding: 15px 30px;
+                    color: #575756;
+                    a{
+                        font-weight: 600;
+                        color: #f05a28;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                button{
+                    margin-top: 20px;
+                    padding: 10px 50px;
+                    border-radius: 7px;
+                    border: 1px solid #f05a28;
+                    background-color: #f05a28;
+                    color: white;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    transition: 0.5s;
+                    &:hover{
+                        font-size: 17px;
+                        background-color: #df3800;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

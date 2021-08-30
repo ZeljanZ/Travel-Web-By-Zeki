@@ -320,6 +320,7 @@ a {
 
 .summer-tours {
   height: 100vh;
+  width: 100%;
   background-color: #7cc9c2; }
   .summer-tours h2 {
     color: white;
@@ -407,7 +408,7 @@ a {
     padding: 30px 40px;
     height: 515px;
     width: 70%;
-    margin: 170px auto;
+    margin: 170px 15%;
     background-color: #f7b64e;
     border-radius: 10px; }
     .traveling-services .services-wrapper .services-holder {
@@ -415,60 +416,92 @@ a {
       display: -ms-flexbox;
       display: flex; }
       .traveling-services .services-wrapper .services-holder .services-text {
-        max-width: 500px;
+        max-width: 40%;
         color: white; }
         .traveling-services .services-wrapper .services-holder .services-text h3 {
-          font-size: 39px;
+          font-size: 2em;
           font-weight: 500;
-          margin-bottom: 50px;
+          margin-bottom: 10%;
           text-transform: capitalize; }
         .traveling-services .services-wrapper .services-holder .services-text h4 {
-          margin-bottom: 25px;
+          margin-bottom: 5%;
           letter-spacing: 1px;
           font-weight: 600; }
         .traveling-services .services-wrapper .services-holder .services-text p {
           font-weight: 300; }
         .traveling-services .services-wrapper .services-holder .services-text a {
           display: inline-block;
-          margin-top: 40px;
+          margin-top: 15%;
           color: white;
           padding: 10px 20px;
           border-radius: 5px;
           background-color: #f05a28; }
       .traveling-services .services-wrapper .services-holder .popular-places {
         position: relative;
-        width: 580px;
-        height: 700px;
+        width: 45%;
+        height: 100%;
+        padding-bottom: 20px;
         z-index: 2;
         border-radius: 10px;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#faf6f6));
-        background-image: linear-gradient(to bottom, #f1f1f1, #faf6f6);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f1f5f7), to(#faf6f6));
+        background-image: linear-gradient(to bottom, #f1f5f7, #faf6f6);
         top: -110px;
-        right: -120px; }
+        right: -10%; }
         .traveling-services .services-wrapper .services-holder .popular-places h3 {
           font-size: 25px;
           text-align: center;
           margin-top: 30px; }
         .traveling-services .services-wrapper .services-holder .popular-places .accordion {
-          background-color: #eee;
-          color: #444;
+          background-image: url("/img/turkey.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          color: #fffefe;
           cursor: pointer;
-          padding: 30px;
+          padding: 25px 30px;
           width: 90%;
           border: none;
           text-align: right;
           outline: none;
-          font-size: 15px;
+          font-size: 22px;
+          font-weight: 500;
+          letter-spacing: 2px;
+          text-shadow: 2px 2px 10px rgba(41, 40, 40, 0.63);
           -webkit-transition: 0.4s;
           transition: 0.4s;
-          margin-top: 30px;
-          margin-left: 20px;
-          margin-right: 20px; }
+          margin: 3% 5%;
+          border-radius: 5px;
+          -webkit-transition: 0.7s;
+          transition: 0.7s;
+          -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+                  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459); }
+        .traveling-services .services-wrapper .services-holder .popular-places .aRussia {
+          background-image: url("/img/russia.jfif");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        .traveling-services .services-wrapper .services-holder .popular-places .aBrazil {
+          background-image: url("/img/brazil.jfif");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        .traveling-services .services-wrapper .services-holder .popular-places .aChina {
+          background-image: url("/img/china.jfif");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
+        .traveling-services .services-wrapper .services-holder .popular-places .aThailand {
+          background-image: url("/img/thailand.jfif");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: bottom; }
         .traveling-services .services-wrapper .services-holder .popular-places .active, .traveling-services .services-wrapper .services-holder .popular-places .accordion:hover {
-          background-color: #ccc; }
+          padding: 50px 50px; }
         .traveling-services .services-wrapper .services-holder .popular-places .accordion:after {
           content: '\002B';
-          color: #777;
+          -webkit-transform: scale(1.2);
+                  transform: scale(1.2);
+          color: #f8f7f7;
           font-weight: bold;
           float: right;
           margin-left: 5px;
@@ -476,12 +509,105 @@ a {
         .traveling-services .services-wrapper .services-holder .popular-places .active:after {
           content: "\2212"; }
         .traveling-services .services-wrapper .services-holder .popular-places .panel {
-          padding: 0 18px;
+          padding: 0 28px;
           background-color: #f1f1f1;
+          font-size: 13px;
           max-height: 0;
           overflow: hidden;
           -webkit-transition: max-height 0.2s ease-out;
           transition: max-height 0.2s ease-out; }
+
+.aboutus {
+  height: 100vh;
+  padding: 5% 15%;
+  width: 100%; }
+  .aboutus .about-wrapper {
+    width: 85%;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem; }
+    .aboutus .about-wrapper h2, .aboutus .about-wrapper h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 40px; }
+    .aboutus .about-wrapper p {
+      padding-bottom: 20px; }
+    .aboutus .about-wrapper ul {
+      padding: 20px 20px; }
+      .aboutus .about-wrapper ul li {
+        padding-bottom: 10px; }
+
+.contact {
+  height: 80vh;
+  width: 100%;
+  background-color: #f7f7f7; }
+  .contact h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #4b4b4a;
+    padding-top: 70px; }
+  .contact .contact-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .contact .contact-wrapper img {
+      padding-left: 100px;
+      width: 50%; }
+    .contact .contact-wrapper .forma-holder {
+      display: inline-block;
+      padding: 50px 100px; }
+      .contact .contact-wrapper .forma-holder form label {
+        display: inline-block;
+        padding: 30px 10px 10px 5px;
+        font-size: 17px;
+        font-weight: 600;
+        color: #575756; }
+      .contact .contact-wrapper .forma-holder form input {
+        height: 55px;
+        width: 150%;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #4747476e;
+        font-size: 17px;
+        background-color: #f7f7f7; }
+        .contact .contact-wrapper .forma-holder form input:hover {
+          border: 2px solid #f05a28; }
+      .contact .contact-wrapper .forma-holder form textarea {
+        height: 140px;
+        width: 150%;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #47474767;
+        font-size: 17px;
+        background-color: #f7f7f7; }
+        .contact .contact-wrapper .forma-holder form textarea:hover {
+          border: 2px solid #f05a28; }
+      .contact .contact-wrapper .forma-holder form .checkbox-input {
+        position: absolute;
+        width: 15px;
+        padding: 15px; }
+      .contact .contact-wrapper .forma-holder form p {
+        padding: 15px 30px;
+        color: #575756; }
+        .contact .contact-wrapper .forma-holder form p a {
+          font-weight: 600;
+          color: #f05a28; }
+          .contact .contact-wrapper .forma-holder form p a:hover {
+            text-decoration: underline; }
+      .contact .contact-wrapper .forma-holder form button {
+        margin-top: 20px;
+        padding: 10px 50px;
+        border-radius: 7px;
+        border: 1px solid #f05a28;
+        background-color: #f05a28;
+        color: white;
+        font-size: 16px;
+        letter-spacing: 1px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
+        .contact .contact-wrapper .forma-holder form button:hover {
+          font-size: 17px;
+          background-color: #df3800;
+          letter-spacing: 3px; }
 
 /* Slideshow container */
 .slideshow-container {
