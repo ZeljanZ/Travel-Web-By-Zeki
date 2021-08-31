@@ -1,9 +1,9 @@
 .traveling-services{
-    height: 100vh;
+    height: 900px;
 
     h2{
         text-align: center;
-        margin-top: 100px;
+        margin-top: 150px;
         font-size: 38px;
         font-weight: 700;
         text-align: center;
@@ -11,13 +11,14 @@
     }
 
     .services-wrapper{
-        padding:30px 40px;
+        padding:2% 2%;
         height: 515px;
         width:70%;
-        margin: 170px 15%;
+        margin: 130px 15% 0px 15%;
         background-color: #f7b64e;
         border-radius: 10px;
-        
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+
         .services-holder{
             display: flex;
             .services-text{
@@ -39,25 +40,28 @@
                 }
                 a{
                     display: inline-block;
-                    margin-top: 15%;
+                    margin-top: 20%;
                     color: white;
                     padding: 10px 20px;
                     border-radius: 5px;
                     background-color: #f05a28;
+                    transition: 0.4s;
+                    &:hover{
+                        background-color: #e93d03;
+                        letter-spacing: 3px;
+                    }
                 }
             }
             .popular-places{
                 position:relative;
                 width:45%;
-                height: 100%;
                 padding-bottom: 20px;
-                z-index: 2;
                 border-radius: 10px;
                 background-image: linear-gradient(to bottom, 
                                                 #f1f5f7, rgb(250, 246, 246));
                 top: -110px;
                 right: -10%;
-                
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
                 h3{
                     font-size: 25px;
                     text-align: center;

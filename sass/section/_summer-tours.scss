@@ -1,12 +1,12 @@
 .summer-tours{
-    height: 100vh;
+    height: 1000px;
     width: 100%;
     background-color: #7cc9c2;
     h2{
         color: white;
-        font-size: 38px;
+        font-size: 2.5em;
         font-weight: 500;
-        padding: 50px;
+        padding: 3% 0px;
         text-align: center;
         letter-spacing: 2px;
     }
@@ -17,21 +17,21 @@
         height: 250px;
         .toure{
             display: flex;
-            height: 50%;
             width: 47%;
-            min-width: 600px;
+            min-width: 900px;
             padding: 0px 10px;
             background-color: white;
             margin-top: 2%;
             margin-left: 12%;//here over
             border-radius: 8px;
             position: relative;
-            z-index: 30;
+            z-index: 20;
             transition: 0.7s;
             &:hover{
+                padding: 20px;
                 width: 52%;
-                padding: 0px 50px;
                 border-radius: 50px;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
                 .price{
                     border-left: 10px dotted #56565741;
                     a{
@@ -43,18 +43,18 @@
             img{
                 height: 120px;
                 width: 140px;
-                padding: 20px 30px;
+                padding: 2% 2%;
             }
             .text-wrapper{
                 margin-top: 30px;
                 padding-left: 5px;
                 color: #565657;
                 h3{
-                    font-size: 23px;
+                    font-size: 1.3em;
                     padding-bottom: 9px;
                 }
                 p{
-                    font-size: 15px;
+                    font-size: 1em;
                 }
             }
             .price{
@@ -63,7 +63,7 @@
                 text-align: center;
                 color: #f7b74f;
                 font-weight: 700;
-                font-size: 25px;
+                font-size: 1.4em;
                 border-left: 10px dotted #56565741;
                 letter-spacing: 1px;
                 a{

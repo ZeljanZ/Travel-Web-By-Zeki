@@ -1,13 +1,16 @@
 footer{
     height: 45vh;
     width: 100%;
-    margin-top: 100px;
     background-color: #318c8c;
-    padding: 100px 220px;
+    padding: 5% 10%;
+    @media (max-width:$lg) {
+        display: none;
+    }
     .footer-wrapper{
         display: flex;
-
+        
         .company-info{
+            min-width:310px ;
             img{
                 width: 140px;
                 margin-bottom: 20px;
@@ -19,10 +22,10 @@ footer{
         }
         .footer-links{
             display: flex;
-            position: relative;
-            left: 230px;
+            margin-left:15%;
             .row{
-                padding-right: 8%;
+                max-width: 35%;
+                margin-right: 5%;
                 h3{
                     color: rgba(255, 255, 255, 0.897);
                 }
@@ -52,9 +55,15 @@ footer{
     background-color: #2f797a;
     padding: 20px;
     height: 70px;
+    @media (max-width:$lg) {
+        justify-content: space-between;
+    }
     p{
         color: #c5c1c1;
         letter-spacing: 1px;
+        @media (max-width:$lg) {
+            letter-spacing: 0px;
+        }
     }
     .social{
         position: relative;
