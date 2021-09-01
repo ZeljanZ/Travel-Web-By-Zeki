@@ -4,29 +4,51 @@
     // background-color: white;
     z-index: 0;
     padding: 120px 0px 200px 10%;
-
+    @media (max-width:$lg) {
+        padding: 90px 0px 0px 4%;
+    }
     .wrapper{
         display: flex;
-
+        
         .text-destination{
             padding-top: 4%;
+            
+            @media (max-width:$lg) {
+                padding-top: 2%;
+                padding-right: 10%;
+            }
             h2{
-                font-size: 89px;
+                font-size: 6em;
+                @media (max-width:$lg) {
+                    width: 450px;
+                    font-size: 5em;
+                }
                 color: #66656510;
             }
             h3{
-                font-size: 33px;
+                font-size: 2em;
                 margin-top: -67px;
                 color: #575756de;
+                @media (max-width:$lg) {
+                    font-size: 1.5em;
+                    margin-top: -58px;
+                }
             }
             p{
                 padding-top: 40px;
                 max-width: 600px;
+                @media (max-width:$lg) {
+                    width: 450px;
+                }
             }
         }
 
         .slider-destination{
             margin-left: 120px;
+            @media (max-width:$lg) {
+                // display: none;
+                margin-left: 30px;
+            }
         }
     }
 

@@ -299,29 +299,53 @@ a {
   background-color: #f7f7f7;
   z-index: 0;
   padding: 120px 0px 200px 10%; }
+  @media (max-width: 1024px) {
+    .destinations {
+      padding: 90px 0px 0px 4%; } }
   .destinations .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
     .destinations .wrapper .text-destination {
       padding-top: 4%; }
+      @media (max-width: 1024px) {
+        .destinations .wrapper .text-destination {
+          padding-top: 2%;
+          padding-right: 10%; } }
       .destinations .wrapper .text-destination h2 {
-        font-size: 89px;
+        font-size: 6em;
         color: #66656510; }
+        @media (max-width: 1024px) {
+          .destinations .wrapper .text-destination h2 {
+            width: 450px;
+            font-size: 5em; } }
       .destinations .wrapper .text-destination h3 {
-        font-size: 33px;
+        font-size: 2em;
         margin-top: -67px;
         color: #575756de; }
+        @media (max-width: 1024px) {
+          .destinations .wrapper .text-destination h3 {
+            font-size: 1.5em;
+            margin-top: -58px; } }
       .destinations .wrapper .text-destination p {
         padding-top: 40px;
         max-width: 600px; }
+        @media (max-width: 1024px) {
+          .destinations .wrapper .text-destination p {
+            width: 450px; } }
     .destinations .wrapper .slider-destination {
       margin-left: 120px; }
+      @media (max-width: 1024px) {
+        .destinations .wrapper .slider-destination {
+          margin-left: 30px; } }
 
 .summer-tours {
   height: 1000px;
   width: 100%;
   background-color: #7cc9c2; }
+  @media (max-width: 1024px) {
+    .summer-tours {
+      height: 800px; } }
   .summer-tours h2 {
     color: white;
     font-size: 2.5em;
@@ -329,6 +353,10 @@ a {
     padding: 3% 0px;
     text-align: center;
     letter-spacing: 2px; }
+    @media (max-width: 1024px) {
+      .summer-tours h2 {
+        font-size: 2em;
+        letter-spacing: 1px; } }
   .summer-tours .toures {
     position: absolute;
     width: 100%;
@@ -348,12 +376,20 @@ a {
       z-index: 20;
       -webkit-transition: 0.7s;
       transition: 0.7s; }
+      @media (max-width: 1024px) {
+        .summer-tours .toures .toure {
+          width: 47%;
+          min-width: 800px;
+          margin-left: 10%; } }
       .summer-tours .toures .toure:hover {
         padding: 20px;
         width: 52%;
         border-radius: 50px;
         -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
                 box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459); }
+        @media (max-width: 1024px) {
+          .summer-tours .toures .toure:hover {
+            padding-left: 0px; } }
         .summer-tours .toures .toure:hover .price {
           border-left: 10px dotted #56565741; }
           .summer-tours .toures .toure:hover .price a {
@@ -362,15 +398,29 @@ a {
         height: 120px;
         width: 140px;
         padding: 2% 2%; }
+        @media (max-width: 1024px) {
+          .summer-tours .toures .toure img {
+            height: 90px;
+            width: 100px;
+            margin-top: 20px; } }
       .summer-tours .toures .toure .text-wrapper {
         margin-top: 30px;
         padding-left: 5px;
         color: #565657; }
+        @media (max-width: 1024px) {
+          .summer-tours .toures .toure .text-wrapper {
+            margin-top: 20px; } }
         .summer-tours .toures .toure .text-wrapper h3 {
           font-size: 1.3em;
           padding-bottom: 9px; }
+          @media (max-width: 1024px) {
+            .summer-tours .toures .toure .text-wrapper h3 {
+              font-size: 1em; } }
         .summer-tours .toures .toure .text-wrapper p {
           font-size: 1em; }
+          @media (max-width: 1024px) {
+            .summer-tours .toures .toure .text-wrapper p {
+              font-size: 0.9em; } }
       .summer-tours .toures .toure .price {
         padding: 20px 50px;
         margin-left: 100px;
@@ -380,6 +430,9 @@ a {
         font-size: 1.4em;
         border-left: 10px dotted #56565741;
         letter-spacing: 1px; }
+        @media (max-width: 1024px) {
+          .summer-tours .toures .toure .price {
+            font-size: 1.3em; } }
         .summer-tours .toures .toure .price a {
           visibility: hidden;
           display: inline-block;
@@ -398,13 +451,20 @@ a {
 
 .traveling-services {
   height: 900px; }
+  @media (max-width: 1024px) {
+    .traveling-services {
+      height: 1350px; } }
   .traveling-services h2 {
     text-align: center;
     margin-top: 150px;
-    font-size: 38px;
+    font-size: 2.5em;
     font-weight: 700;
     text-align: center;
     letter-spacing: 2px; }
+    @media (max-width: 1024px) {
+      .traveling-services h2 {
+        margin-top: 50px;
+        font-size: 2em; } }
   .traveling-services .services-wrapper {
     padding: 2% 2%;
     height: 515px;
@@ -414,24 +474,48 @@ a {
     border-radius: 10px;
     -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459); }
+    @media (max-width: 1024px) {
+      .traveling-services .services-wrapper {
+        height: 1200px;
+        margin: 50px 15% 0px 15%;
+        -webkit-box-shadow: none;
+                box-shadow: none; } }
+    @media (max-width: 1440px) {
+      .traveling-services .services-wrapper {
+        height: 600px; } }
     .traveling-services .services-wrapper .services-holder {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+      @media (max-width: 1024px) {
+        .traveling-services .services-wrapper .services-holder {
+          display: block; } }
       .traveling-services .services-wrapper .services-holder .services-text {
         max-width: 40%;
         color: white; }
+        @media (max-width: 1024px) {
+          .traveling-services .services-wrapper .services-holder .services-text {
+            max-width: 100%;
+            text-align: center; } }
         .traveling-services .services-wrapper .services-holder .services-text h3 {
           font-size: 2em;
           font-weight: 500;
           margin-bottom: 10%;
           text-transform: capitalize; }
+          @media (max-width: 1024px) {
+            .traveling-services .services-wrapper .services-holder .services-text h3 {
+              margin-bottom: 5%;
+              font-size: 1.4em; } }
         .traveling-services .services-wrapper .services-holder .services-text h4 {
           margin-bottom: 5%;
           letter-spacing: 1px;
           font-weight: 600; }
+          @media (max-width: 1024px) {
+            .traveling-services .services-wrapper .services-holder .services-text h4 {
+              margin-bottom: 3%; } }
         .traveling-services .services-wrapper .services-holder .services-text p {
-          font-weight: 300; }
+          font-weight: 300;
+          font-size: 1.1em; }
         .traveling-services .services-wrapper .services-holder .services-text a {
           display: inline-block;
           margin-top: 20%;
@@ -444,6 +528,9 @@ a {
           .traveling-services .services-wrapper .services-holder .services-text a:hover {
             background-color: #e93d03;
             letter-spacing: 3px; }
+          @media (max-width: 1024px) {
+            .traveling-services .services-wrapper .services-holder .services-text a {
+              margin-top: 10%; } }
       .traveling-services .services-wrapper .services-holder .popular-places {
         position: relative;
         width: 45%;
@@ -455,6 +542,18 @@ a {
         right: -10%;
         -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
                 box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459); }
+        @media (max-width: 1024px) {
+          .traveling-services .services-wrapper .services-holder .popular-places {
+            width: 110%;
+            padding-top: 10px;
+            top: 60px;
+            right: 30px;
+            -webkit-box-shadow: none;
+                    box-shadow: none; } }
+        @media (max-width: 1440px) {
+          .traveling-services .services-wrapper .services-holder .popular-places {
+            top: -40px;
+            right: -100px; } }
         .traveling-services .services-wrapper .services-holder .popular-places h3 {
           font-size: 25px;
           text-align: center;
@@ -483,6 +582,10 @@ a {
           transition: 0.7s;
           -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
                   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459); }
+          @media (max-width: 1024px) {
+            .traveling-services .services-wrapper .services-holder .popular-places .accordion {
+              width: 70%;
+              margin: 3% 15%; } }
         .traveling-services .services-wrapper .services-holder .popular-places .aRussia {
           background-image: url("/img/russia.jfif");
           background-repeat: no-repeat;
@@ -533,7 +636,7 @@ a {
   @media (max-width: 1024px) {
     .aboutus {
       margin: 3%;
-      max-width: 100%; } }
+      max-width: 97%; } }
   .aboutus .about-wrapper {
     width: 85%;
     letter-spacing: 0.5px;

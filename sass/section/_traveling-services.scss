@@ -1,13 +1,19 @@
 .traveling-services{
     height: 900px;
-
+    @media (max-width:$lg) {
+        height: 1350px;
+    }
     h2{
         text-align: center;
         margin-top: 150px;
-        font-size: 38px;
+        font-size: 2.5em;
         font-weight: 700;
         text-align: center;
         letter-spacing: 2px;
+        @media (max-width:$lg) {
+            margin-top: 50px;
+            font-size: 2em;
+        }
     }
 
     .services-wrapper{
@@ -18,25 +24,47 @@
         background-color: #f7b64e;
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
-
+        @media (max-width:$lg) {
+            height: 1200px;
+            margin: 50px 15% 0px 15%;
+            box-shadow: none;
+        }
+        @media (max-width:$xl) {
+            height: 600px;
+        }
         .services-holder{
             display: flex;
+            @media (max-width:$lg) {
+                display: block;
+            }
             .services-text{
                 max-width: 40%;
                 color: white;
+                @media (max-width:$lg) {
+                    max-width: 100%;
+                    text-align: center;
+                }
                 h3{
                     font-size: 2em;
                     font-weight: 500;
                     margin-bottom: 10%;
                     text-transform: capitalize;
+                    @media (max-width:$lg) {
+                        margin-bottom: 5%;
+                        font-size: 1.4em;
+                    }
                 }
                 h4{
                     margin-bottom: 5%;
                     letter-spacing: 1px;
                     font-weight: 600;
+                    @media (max-width:$lg) {
+                        margin-bottom: 3%;
+                    }
                 }
                 p{
                     font-weight: 300;
+                    font-size: 1.1em;
                 }
                 a{
                     display: inline-block;
@@ -50,6 +78,9 @@
                         background-color: #e93d03;
                         letter-spacing: 3px;
                     }
+                    @media (max-width:$lg) {
+                        margin-top: 10%;
+                    }
                 }
             }
             .popular-places{
@@ -62,6 +93,17 @@
                 top: -110px;
                 right: -10%;
                 box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+                @media (max-width:$lg) {
+                    width: 110%;
+                    padding-top: 10px;
+                    top: 60px;
+                    right: 30px;
+                    box-shadow: none;
+                }
+                @media (max-width:$xl) {
+                    top: -40px;
+                    right: -100px;
+                }
                 h3{
                     font-size: 25px;
                     text-align: center;
@@ -91,7 +133,11 @@
                     border-radius: 5px;
                     transition: 0.7s;
                     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+                    @media (max-width:$lg) {
+                        width: 70%;
+                        margin: 3% 15%;
                     }
+                }
                     .aRussia{
                         background-image: url('/img/russia.jfif');
                         background-repeat: no-repeat;

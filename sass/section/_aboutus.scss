@@ -6,7 +6,8 @@
     max-width: 80%;
     @media (max-width:$lg) {
         margin: 3%;
-        max-width: 100%;
+        max-width: 97%;
+        // display: none;
     }
     .about-wrapper{
         width: 85%;
