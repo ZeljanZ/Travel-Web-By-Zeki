@@ -30,7 +30,7 @@
             box-shadow: none;
         }
         @media (max-width:$xl) {
-            height: 600px;
+            height: 1170px;
         }
         .services-holder{
             display: flex;
@@ -79,7 +79,8 @@
                         letter-spacing: 3px;
                     }
                     @media (max-width:$lg) {
-                        margin-top: 10%;
+                        margin: 5% 0;
+                        
                     }
                 }
             }
@@ -101,8 +102,8 @@
                     box-shadow: none;
                 }
                 @media (max-width:$xl) {
-                    top: -40px;
-                    right: -100px;
+                    top: 0px;
+                    right: 32px;
                 }
                 h3{
                     font-size: 25px;
@@ -182,11 +183,15 @@
                     
                     .panel {
                         padding: 0 28px;
-                        background-color:#f1f1f1;
+                        background-color:#f1f1f100;
                         font-size: 13px;
                         max-height: 0;
                         overflow: hidden;
                         transition: max-height 0.2s ease-out;
+                        @media (max-width:$lg) {
+                            padding: 0 128px;
+                            
+                        }
                     }
             }
         }
