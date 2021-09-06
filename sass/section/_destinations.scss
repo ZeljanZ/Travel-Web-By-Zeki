@@ -4,6 +4,9 @@
     // background-color: white;
     z-index: 0;
     padding: 120px 0px 200px 10%;
+    @media (max-width:$xl) {
+        padding: 90px 0px 0px 4%;
+    }
     @media (max-width:$lg) {
         padding: 90px 0px 0px 4%;
     }
@@ -12,7 +15,10 @@
         
         .text-destination{
             padding-top: 4%;
-            
+            @media (max-width:$xl) {
+                padding-top: 0;
+                padding-right: 10%;
+            }
             @media (max-width:$lg) {
                 padding-top: 2%;
                 padding-right: 10%;
@@ -29,6 +35,10 @@
                 font-size: 2em;
                 margin-top: -67px;
                 color: #575756de;
+                @media (max-width:$xl) {
+                    font-size: 1.6em;
+                    margin-top: -58px;
+                }
                 @media (max-width:$lg) {
                     font-size: 1.5em;
                     margin-top: -58px;
@@ -45,6 +55,9 @@
 
         .slider-destination{
             margin-left: 120px;
+            @media (max-width:$xl) {
+                margin-left: 30px;
+            }
             @media (max-width:$lg) {
                 // display: none;
                 margin-left: 30px;

@@ -9,6 +9,9 @@
     background: #111;
     color: #ffff;
     z-index: 2;
+    @media (max-width:$xl) {
+        padding: 0 4%;
+    }
 
     header{
         position: absolute;
@@ -24,8 +27,12 @@
         align-items: center;
         justify-content: space-between;
         background-color: white;
-        // box-shadow: 4px 4px 40px #111;
-        
+        // box-shadow: 2px 2px 10px #111;
+        @media (max-width:$xl) {
+            width: 90%;
+            left: 0%;
+            right: 0%;
+        }
         .logo{
             width: 150px;
             height: 60px;
@@ -187,6 +194,9 @@
             line-height: 1.3em;
             margin-top: 50px;
             text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
+            @media (max-width:$xl) {
+                font-size: 5em;
+            }
         }
         p{
             font-size: 1.2em;
@@ -194,6 +204,9 @@
             font-weight: 400;
             max-width: 450px;
             text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
+            @media (max-width:$xl) {
+                font-size: 1em;
+            }
         }
 
         .button{
@@ -235,17 +248,24 @@
             }
         }
     }
+    
     .right-text{
+        position: absolute;
+        bottom: 150px;
+        right: 420px;
         z-index: 10;
         max-width: 400px;
         text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
-    }
+        @media (max-width:$xl) {
+            bottom: 50px;
+            right: 170px;
+        }
+        @media (max-width:$lg) {
+            bottom: 0px;
+            right: 100px;
+            max-width: 400px;
+        }
 
-    .right-text{
-                position: absolute;
-                bottom: 150px;
-                right: 420px;
-                
         .text-normal{
             position: relative;
             .symbol{

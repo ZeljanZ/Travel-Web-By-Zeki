@@ -2,6 +2,9 @@
     height: 1000px;
     width: 100%;
     background-color: #7cc9c2;
+    @media (max-width:$xl) {
+        height: 850px;
+    }
     @media (max-width:$lg) {
         height: 800px;
     }
@@ -12,6 +15,12 @@
         padding: 3% 0px;
         text-align: center;
         letter-spacing: 2px;
+        @media (max-width:$xl) {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
         @media (max-width:$lg) {
             font-size: 2em;
             letter-spacing: 1px;
@@ -22,9 +31,8 @@
         position: absolute;
         width: 100%;
         height: 250px;
-        @media (max-width:$lg) {
-
-        }
+        
+        
         .toure{
             display: flex;
             width: 47%;
@@ -37,6 +45,11 @@
             position: relative;
             z-index: 20;
             transition: 0.7s;
+            @media (max-width:$xl) {
+                width: 47%;
+                min-width: 900px;
+                margin-left: 4%
+            }
             @media (max-width:$lg) {
                 width: 47%;
                 min-width: 800px;
