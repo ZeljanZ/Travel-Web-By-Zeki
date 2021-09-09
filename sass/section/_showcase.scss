@@ -29,7 +29,12 @@
         background-color: white;
         // box-shadow: 2px 2px 10px #111;
         @media (max-width:$xl) {
-            width: 90%;
+            width: 92%;
+            left: 0%;
+            right: 0%;
+        }
+        @media (max-width:$xl) {
+            width: 100%;
             left: 0%;
             right: 0%;
         }
@@ -48,7 +53,9 @@
             background-size: 30px;
             background-position: center;
             cursor: pointer;
-            
+            @media (max-width:$xl) {
+                display: block;
+        }
         }
         .toggle.active{
             background: url('../img/icons8-delete-24.png');
@@ -62,9 +69,16 @@
             img{
                 width: 150px;
                 height: 60px;
+                @media (max-width:$xl) {
+                    width: 135px;
+                    height: 60px;
+                }
             }
         nav{
             ul{
+                @media (max-width:$xl) {
+                    display: none;
+                }
                 position: absolute;
                 top: 30px;
                 left: 170px;
@@ -115,11 +129,14 @@
         }
         .login-wrapper{
         ul{
+
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 30px;
-            
+            @media (max-width:$xl) {
+                    display: none;
+            }
             li{
                 position: relative;
                 list-style: none;
@@ -195,7 +212,11 @@
             margin-top: 50px;
             text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
             @media (max-width:$xl) {
-                font-size: 5em;
+                font-size: 4.5em;
+            }
+            @media (max-width:$lg) {
+                margin-top: -100px;
+                font-size: 3.5rem;
             }
         }
         p{
@@ -212,7 +233,9 @@
         .button{
 
             a{
-                
+                @media (max-width:$xl) {
+                    font-size: 0.8em;
+                }
                 &:last-of-type{
                     margin-left: 10px;
                     background-color: rgba(255, 255, 255, 0)!important;
@@ -257,11 +280,11 @@
         max-width: 400px;
         text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
         @media (max-width:$xl) {
-            bottom: 50px;
+            bottom: 20px;
             right: 170px;
         }
         @media (max-width:$lg) {
-            bottom: 0px;
+            bottom: 30px;
             right: 100px;
             max-width: 400px;
         }
@@ -272,9 +295,17 @@
                 z-index: -1;
                 font-size: 255px;
                 position: absolute;
-                top: -150px;
-                left: -100px;
+                top: -120px;
+                left: -70px;
                 color: #ffffff54;
+                @media (max-width:$xl) {
+                    font-size: 175px;
+                }
+                @media (max-width:$lg) {
+                    font-size: 155px;
+                    top: -110px;
+                    left: -60px;
+                }
             }
 
             h4{
@@ -282,10 +313,22 @@
                 top: 5px;
                 font-size: 1.2rem;
                 text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
+                @media (max-width:$xl) {
+                    font-size: 1rem;
+                }
+                @media (max-width:$lg) {
+                    font-size: 0.9rem;
+                }
             }
             p{
                 text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
                 padding: 35px 0;
+                @media (max-width:$xl) {
+                    font-size: 0.9rem;
+                }
+                @media (max-width:$lg) {
+                    font-size: 0.8rem;
+                }
             }
 
         }
@@ -297,6 +340,10 @@
             left: 430px;
             top: 110px;
             width: 100%;
+            @media (max-width:$lg) {
+                left: 400px;
+                top: 80px;
+            }
 
             /* Safari */
             -webkit-transform: rotate(-90deg);

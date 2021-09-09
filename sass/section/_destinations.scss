@@ -10,9 +10,14 @@
     @media (max-width:$lg) {
         padding: 90px 0px 0px 4%;
     }
+    @media (max-width:$md) {
+        height:1000px;
+    }
     .wrapper{
         display: flex;
-        
+        @media (max-width:$md) {
+            display: block;
+        }
         .text-destination{
             padding-top: 4%;
             @media (max-width:$xl) {
@@ -23,6 +28,9 @@
                 padding-top: 2%;
                 padding-right: 10%;
             }
+            @media (max-width:$md) {
+                padding-top: 0%;
+            }
             h2{
                 font-size: 6em;
                 @media (max-width:$lg) {
@@ -30,6 +38,10 @@
                     font-size: 5em;
                 }
                 color: #66656510;
+                @media (max-width:$md) {
+                    text-align: center;
+                    
+                }
             }
             h3{
                 font-size: 2em;
@@ -43,12 +55,23 @@
                     font-size: 1.5em;
                     margin-top: -58px;
                 }
+                @media (max-width:$md) {
+                    font-size: 1.5em;
+                    margin-top: -178px;
+                    text-align: center;
+                    margin: -58 auto;
+                }
             }
             p{
                 padding-top: 40px;
                 max-width: 600px;
                 @media (max-width:$lg) {
                     width: 450px;
+                }
+                @media (max-width:$md) {
+                    text-align: center;
+                    max-width: 600px;
+                    margin: 0 auto;
                 }
             }
         }
@@ -61,6 +84,9 @@
             @media (max-width:$lg) {
                 // display: none;
                 margin-left: 30px;
+            }
+            @media (max-width:$md) {
+                margin-left: 0px;
             }
         }
     }
