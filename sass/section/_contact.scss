@@ -28,6 +28,9 @@
                 @media (max-width:$lg) {
                     margin: 0px 150px;
                 }
+                @media (max-width:$md) {
+                    margin: -50px 30px;
+                }
                 label{
                     display: inline-block;
                     padding: 30px 10px 10px 5px;
@@ -75,6 +78,7 @@
                         &:hover{
                             text-decoration: underline;
                         }
+                        
                     }
                 }
                 button{

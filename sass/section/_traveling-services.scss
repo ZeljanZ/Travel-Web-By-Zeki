@@ -3,6 +3,7 @@
     @media (max-width:$lg) {
         height: 1350px;
     }
+    
     h2{
         text-align: center;
         margin-top: 150px;
@@ -17,6 +18,9 @@
         @media (max-width:$lg) {
             margin-top: 50px;
             font-size: 2em;
+        }
+        @media (max-width:$md) {
+            margin-bottom: 20px;
         }
     }
 
@@ -37,6 +41,12 @@
             height: 1200px;
             margin: 50px 15% 0px 15%;
             box-shadow: none;
+        }
+        @media (max-width:$md) {
+            padding:2% 2%;
+            height: 1170px;
+            margin: 10px 10px 0px 35px;
+            width:90%;
         }
         .services-holder{
             display: flex;
@@ -74,7 +84,7 @@
                 }
                 a{
                     display: inline-block;
-                    margin-top: 20%;
+                    margin-top: 10%;
                     color: white;
                     padding: 10px 20px;
                     border-radius: 5px;
@@ -83,6 +93,9 @@
                     &:hover{
                         background-color: #e93d03;
                         letter-spacing: 3px;
+                    }
+                    @media (max-width:$xl) {
+                        margin-top: 80px;
                     }
                     @media (max-width:$lg) {
                         margin: 5% 0;
@@ -111,7 +124,11 @@
                     right: 30px;
                     box-shadow: none;
                 }
-                
+                @media (max-width:$md) {
+                    width: 120%;
+                    top: s0px;
+                    right: 10%;
+                }
                 h3{
                     font-size: 25px;
                     text-align: center;
@@ -119,7 +136,7 @@
                 }
                 
                 .accordion {
-                    background-image: url('/img/turkey.jpg');
+                    background-image: url('../img/turkey.jpg');
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
@@ -147,25 +164,25 @@
                     }
                 }
                     .aRussia{
-                        background-image: url('/img/russia.jfif');
+                        background-image: url('../img/russia.jfif');
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
                     }
                     .aBrazil{
-                        background-image: url('/img/brazil.jfif');
+                        background-image: url('../img/brazil.jfif');
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
                     }
                     .aChina{
-                        background-image: url('/img/china.jfif');
+                        background-image: url('../img/china.jfif');
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
                     }
                     .aThailand{
-                        background-image: url('/img/thailand.jfif');
+                        background-image: url('../img/thailand.jfif');
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: bottom;
