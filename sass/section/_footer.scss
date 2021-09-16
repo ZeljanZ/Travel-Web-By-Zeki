@@ -58,11 +58,22 @@ footer{
     @media (max-width:$lg) {
         justify-content: space-between;
     }
+    @media (max-width:$sm) {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 160px;
+        padding: 20px;
+        text-align: center;
+
+    }
     p{
         color: #c5c1c1;
         letter-spacing: 1px;
         @media (max-width:$lg) {
             letter-spacing: 0px;
+        }
+        @media (max-width:$sm) {
+            margin-top: 8px;
         }
     }
     .social{
@@ -70,7 +81,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         li{
             list-style: none;
 

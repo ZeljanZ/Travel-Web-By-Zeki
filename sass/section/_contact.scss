@@ -31,6 +31,9 @@
                 @media (max-width:$md) {
                     margin: -50px 30px;
                 }
+                @media (max-width:$sm) {
+                    margin: 0;
+                }
                 label{
                     display: inline-block;
                     padding: 30px 10px 10px 5px;
@@ -50,6 +53,9 @@
                     &:hover{
                         border: 2px solid #f05a28;
                     }
+                    @media (max-width:$sm) {
+                        width: 120%;
+                    }
                 }
                 textarea{
                     height: 140px;
@@ -62,6 +68,9 @@
 
                     &:hover{
                         border: 2px solid #f05a28;
+                    }
+                    @media (max-width:$sm) {
+                        width: 120%;
                     }
                 }
                 .checkbox-input{
@@ -80,6 +89,8 @@
                         }
                         
                     }
+                    @media (max-width:$sm) {
+                    }
                 }
                 button{
                     margin-top: 20px;
@@ -96,6 +107,7 @@
                         background-color: #df3800;
                         letter-spacing: 3px;
                     }
+                    
                 }
             }
         }

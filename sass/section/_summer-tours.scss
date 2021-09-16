@@ -11,6 +11,9 @@
     @media (max-width:$md) {
         height: 700px;
     }
+    @media (max-width:$sm) {
+        height: 1500px;
+    }
     h2{
         color: white;
         font-size: 2.5em;
@@ -27,6 +30,9 @@
         @media (max-width:$lg) {
             font-size: 2em;
             letter-spacing: 1px;
+        }
+        @media (max-width:$sm) {
+            //responisve
         }
     }
 
@@ -63,6 +69,10 @@
                 min-width: 700px;
                 margin-left: 16px;//here over
             }
+            @media (max-width:$sm) {
+                flex-direction: column;
+                // min-width: 420px;  OVDE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+            }
             &:hover{
                 padding: 20px;
                 width: 52%;
@@ -71,8 +81,18 @@
                 @media (max-width:$lg) {
                     padding-left: 0px;
                 }
+                @media (max-width:$sm) {
+                    //responisve
+                    padding: 10px;
+                    width: 10%;
+                    border-radius: 0px;
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+                }
                 .price{
                     border-left: 10px dotted #56565741;
+                    @media (max-width:$sm) {
+                        border-left: none;
+                    }
                     a{
                         visibility: visible;
                     }
@@ -121,6 +141,10 @@
                 letter-spacing: 1px;
                 @media (max-width:$lg) {
                     font-size: 1.3em;
+                }
+                @media (max-width:$sm) {
+                    border-left: none;
+                    border-top: 10px dotted #56565741;
                 }
                 a{
                     visibility: hidden;

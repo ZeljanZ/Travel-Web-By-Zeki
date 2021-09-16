@@ -13,6 +13,9 @@
         max-width: 97%;
         // display: none;
     }
+    @media (max-width:$sm) {
+        height: 900px;
+    }
     .about-wrapper{
         width: 85%;
         @media (max-width:$lg) {
@@ -29,9 +32,13 @@
                 font-size: 1.7em;
                 margin-bottom: 20px;
             }
+            @media (max-width:$sm) {
+                font-size: 1.5em;
+            }
         }
         p{
             margin-bottom: 20px;
+            
         }
         ul{
             padding: 20px 20px;
