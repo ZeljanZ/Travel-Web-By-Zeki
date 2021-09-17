@@ -98,8 +98,11 @@
     }
     @media (max-width:$md) {
       right: 600px;
-  }
-  }
+    }
+    @media (max-width:$sm) {
+      right: 0px;
+    }
+    }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {

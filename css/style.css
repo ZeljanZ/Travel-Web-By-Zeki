@@ -22,22 +22,20 @@ a {
   clear: both;
   display: table; }
 
-.button {
-  margin-top: 40px; }
-  .button a {
-    display: inline-block;
-    font-size: 1em;
-    background-color: #f05a28 !important;
-    padding: 10px 30px;
-    color: #fffefe;
-    margin-top: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    border-radius: 5px; }
-    .button a:hover {
-      letter-spacing: 6px; }
+.button a {
+  display: inline-block;
+  font-size: 1em;
+  background-color: #f05a28 !important;
+  padding: 10px 30px;
+  color: #fffefe;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 5px; }
+  .button a:hover {
+    letter-spacing: 6px; }
 
 .showcase {
   position: relative;
@@ -61,8 +59,14 @@ a {
   @media (max-width: 1440px) {
     .showcase {
       padding: 0 4%; } }
+  @media (max-width: 575px) {
+    .showcase {
+      min-height: 100vh; } }
   .showcase.active {
     width: 70%; }
+    @media (max-width: 575px) {
+      .showcase.active {
+        width: 70%; } }
   .showcase header {
     position: absolute;
     top: 0;
@@ -82,11 +86,6 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-color: white; }
-    @media (max-width: 1440px) {
-      .showcase header {
-        width: 92%;
-        left: 0%;
-        right: 0%; } }
     @media (max-width: 1440px) {
       .showcase header {
         width: 100%;
@@ -124,6 +123,9 @@ a {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; }
+        @media (max-width: 575px) {
+          .showcase header .toggle .menu {
+            right: -140px; } }
         .showcase header .toggle .menu ul {
           position: relative; }
           .showcase header .toggle .menu ul li {
@@ -279,6 +281,10 @@ a {
         .showcase .text h2 {
           margin-top: -100px;
           font-size: 3.5rem; } }
+      @media (max-width: 575px) {
+        .showcase .text h2 {
+          margin-top: -120px;
+          font-size: 3.0rem; } }
     .showcase .text p {
       font-size: 1.2em;
       margin: 20px 0;
@@ -288,14 +294,25 @@ a {
       @media (max-width: 1440px) {
         .showcase .text p {
           font-size: 1em; } }
+      @media (max-width: 575px) {
+        .showcase .text p {
+          font-size: 1em;
+          max-width: 330px; } }
     @media (max-width: 1440px) {
       .showcase .text .button a {
         font-size: 0.8em; } }
+    @media (max-width: 575px) {
+      .showcase .text .button a {
+        font-size: 0.7em;
+        padding: 10px 40px; } }
     .showcase .text .button a:last-of-type {
       margin-left: 10px;
       background-color: rgba(255, 255, 255, 0) !important;
       border: 1px solid white;
       color: white; }
+      .showcase .text .button a:last-of-type:hover {
+        background-color: #f1f1f1 !important;
+        color: #111; }
   .showcase .social {
     position: absolute;
     bottom: 20px;
@@ -309,6 +326,9 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 575px) {
+      .showcase .social {
+        bottom: 0px; } }
     .showcase .social li {
       list-style: none; }
       .showcase .social li a {
@@ -345,10 +365,19 @@ a {
         bottom: 50px;
         right: 150px;
         max-width: 320px; } }
+    @media (max-width: 575px) {
+      .showcase .right-text {
+        bottom: 0px;
+        right: 150px;
+        max-width: 290px; } }
     .showcase .right-text .text-normal {
       position: relative;
       bottom: 10px;
       right: -20px; }
+      @media (max-width: 575px) {
+        .showcase .right-text .text-normal {
+          bottom: 5px;
+          right: -130px; } }
       .showcase .right-text .text-normal .symbol {
         z-index: -1;
         font-size: 255px;
@@ -366,6 +395,11 @@ a {
             font-size: 155px;
             top: -110px;
             left: -60px; } }
+        @media (max-width: 575px) {
+          .showcase .right-text .text-normal .symbol {
+            font-size: 135px;
+            top: -70px;
+            left: 0px; } }
       .showcase .right-text .text-normal h4 {
         position: absolute;
         top: 5px;
@@ -377,6 +411,10 @@ a {
         @media (max-width: 1024px) {
           .showcase .right-text .text-normal h4 {
             font-size: 0.9rem; } }
+        @media (max-width: 575px) {
+          .showcase .right-text .text-normal h4 {
+            font-size: 0.8rem;
+            right: 0px; } }
       .showcase .right-text .text-normal p {
         text-shadow: 2px 2px 10px rgba(49, 48, 48, 0.63);
         padding: 35px 0; }
@@ -386,6 +424,10 @@ a {
         @media (max-width: 1024px) {
           .showcase .right-text .text-normal p {
             font-size: 0.8rem; } }
+        @media (max-width: 575px) {
+          .showcase .right-text .text-normal p {
+            text-align: right;
+            max-width: 300px; } }
     .showcase .right-text .text-vertical {
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
@@ -407,6 +449,14 @@ a {
         .showcase .right-text .text-vertical {
           left: 400px;
           top: 80px; } }
+      @media (max-width: 575px) {
+        .showcase .right-text .text-vertical {
+          position: relative;
+          left: 260px;
+          top: -20px;
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          margin-right: 190px; } }
       .showcase .right-text .text-vertical img {
         width: 50px;
         height: 50px;
@@ -417,8 +467,20 @@ a {
         position: absolute;
         top: -170px;
         left: 10px; }
+        @media (max-width: 575px) {
+          .showcase .right-text .text-vertical img {
+            display: block;
+            top: -2px;
+            left: 110px;
+            -webkit-transform-origin: 0px 0px;
+                    transform-origin: 0px 0px;
+            -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg); } }
       .showcase .right-text .text-vertical p {
         font-weight: 200; }
+      @media (max-width: 575px) {
+        .showcase .right-text .text-vertical .country {
+          margin-left: 54px; } }
       .showcase .right-text .text-vertical .name {
         font-weight: 500; }
 
@@ -436,10 +498,20 @@ a {
   @media (max-width: 768px) {
     .destinations {
       height: 550px; } }
+  @media (max-width: 575px) {
+    .destinations {
+      height: 770px;
+      padding: 40px 0px 0px 4%; } }
   .destinations .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 575px) {
+      .destinations .wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .destinations .wrapper .text-destination {
       padding-top: 4%; }
       @media (max-width: 1440px) {
@@ -453,6 +525,9 @@ a {
       @media (max-width: 768px) {
         .destinations .wrapper .text-destination {
           padding-top: 0%; } }
+      @media (max-width: 575px) {
+        .destinations .wrapper .text-destination {
+          padding: 0; } }
       .destinations .wrapper .text-destination h2 {
         color: #66656510;
         font-size: 6em; }
@@ -462,7 +537,12 @@ a {
             font-size: 5em; } }
         @media (max-width: 768px) {
           .destinations .wrapper .text-destination h2 {
-            font-size: 4.5-em; } }
+            font-size: 4.5em; } }
+        @media (max-width: 575px) {
+          .destinations .wrapper .text-destination h2 {
+            font-size: 4.9em;
+            text-align: center;
+            margin-left: 30px; } }
       .destinations .wrapper .text-destination h3 {
         font-size: 2em;
         margin-top: -67px;
@@ -478,6 +558,10 @@ a {
         @media (max-width: 768px) {
           .destinations .wrapper .text-destination h3 {
             font-size: 1.4em; } }
+        @media (max-width: 575px) {
+          .destinations .wrapper .text-destination h3 {
+            font-size: 1.7em;
+            text-align: center; } }
       .destinations .wrapper .text-destination p {
         padding-top: 50px;
         max-width: 600px; }
@@ -488,6 +572,16 @@ a {
           .destinations .wrapper .text-destination p {
             max-width: 330px;
             padding-top: 30px; } }
+        @media (max-width: 575px) {
+          .destinations .wrapper .text-destination p {
+            font-size: 1em;
+            text-align: center;
+            padding: 20px 0 30px 0;
+            margin: 0 auto;
+            max-width: 450px; } }
+      @media (max-width: 575px) {
+        .destinations .wrapper .text-destination .button {
+          display: none; } }
     .destinations .wrapper .slider-destination {
       margin-left: 120px; }
       @media (max-width: 1440px) {
@@ -499,6 +593,9 @@ a {
       @media (max-width: 768px) {
         .destinations .wrapper .slider-destination {
           margin-left: -190px; } }
+      @media (max-width: 575px) {
+        .destinations .wrapper .slider-destination {
+          margin-left: -15px; } }
 
 .summer-tours {
   height: 1000px;
@@ -515,7 +612,7 @@ a {
       height: 700px; } }
   @media (max-width: 575px) {
     .summer-tours {
-      height: 1500px; } }
+      height: 1480px; } }
   .summer-tours h2 {
     color: white;
     font-size: 2.5em;
@@ -533,6 +630,11 @@ a {
       .summer-tours h2 {
         font-size: 2em;
         letter-spacing: 1px; } }
+    @media (max-width: 575px) {
+      .summer-tours h2 {
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 1.5em; } }
   .summer-tours .toures {
     position: absolute;
     width: 100%;
@@ -547,7 +649,7 @@ a {
       background-color: white;
       margin-top: 2%;
       margin-left: 12%;
-      border-radius: 8px;
+      border-radius: 5px;
       position: relative;
       z-index: 20;
       -webkit-transition: 0.7s;
@@ -572,11 +674,13 @@ a {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
-                  flex-direction: column; } }
+                  flex-direction: column;
+          min-width: 470px;
+          margin: 20px auto; } }
       .summer-tours .toures .toure:hover {
         padding: 20px;
         width: 52%;
-        border-radius: 50px;
+        border-radius: 25px;
         -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
                 box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459); }
         @media (max-width: 1024px) {
@@ -585,7 +689,7 @@ a {
         @media (max-width: 575px) {
           .summer-tours .toures .toure:hover {
             padding: 10px;
-            width: 10%;
+            width: 0%;
             border-radius: 0px;
             -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
                     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459); } }
@@ -595,7 +699,7 @@ a {
             .summer-tours .toures .toure:hover .price {
               border-left: none; } }
           .summer-tours .toures .toure:hover .price a {
-            visibility: visible; }
+            display: inline-block; }
       .summer-tours .toures .toure img {
         height: 120px;
         width: 140px;
@@ -605,6 +709,12 @@ a {
             height: 90px;
             width: 100px;
             margin-top: 20px; } }
+        @media (max-width: 575px) {
+          .summer-tours .toures .toure img {
+            height: 100px;
+            width: 90px;
+            margin: 0 auto;
+            padding-top: 20px; } }
       .summer-tours .toures .toure .text-wrapper {
         margin-top: 30px;
         padding-left: 5px;
@@ -618,11 +728,22 @@ a {
           @media (max-width: 1024px) {
             .summer-tours .toures .toure .text-wrapper h3 {
               font-size: 1em; } }
+          @media (max-width: 575px) {
+            .summer-tours .toures .toure .text-wrapper h3 {
+              font-size: 1.2em;
+              text-align: center; } }
         .summer-tours .toures .toure .text-wrapper p {
           font-size: 1em; }
           @media (max-width: 1024px) {
             .summer-tours .toures .toure .text-wrapper p {
-              font-size: 0.9em; } }
+              font-size: 0.9em;
+              padding-bottom: 10px; } }
+          @media (max-width: 575px) {
+            .summer-tours .toures .toure .text-wrapper p {
+              font-size: 0.9em;
+              text-align: center;
+              max-width: 200px;
+              margin: 0 auto; } }
       .summer-tours .toures .toure .price {
         padding: 20px 50px;
         margin-left: 100px;
@@ -631,23 +752,34 @@ a {
         font-weight: 700;
         font-size: 1.4em;
         border-left: 10px dotted #56565741;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
         @media (max-width: 1024px) {
           .summer-tours .toures .toure .price {
             font-size: 1.3em; } }
         @media (max-width: 575px) {
           .summer-tours .toures .toure .price {
             border-left: none;
-            border-top: 10px dotted #56565741; } }
+            border-top: 5px dotted #56565741;
+            margin-left: 0px;
+            margin-top: 10px;
+            font-size: 1.7em;
+            padding: 15px 0px;
+            font-weight: 600; } }
         .summer-tours .toures .toure .price a {
-          visibility: hidden;
-          display: inline-block;
+          display: none;
           margin-top: 10px;
           padding: 2px 17px;
           border-radius: 5px;
           color: white;
           background-color: #87c5ec;
           font-weight: 600; }
+          @media (max-width: 575px) {
+            .summer-tours .toures .toure .price a {
+              padding: 0px 27px;
+              font-weight: 500;
+              font-size: 0.8em; } }
   .summer-tours .imgSummer {
     position: absolute;
     width: 900px;
@@ -913,7 +1045,7 @@ a {
       max-width: 97%; } }
   @media (max-width: 575px) {
     .aboutus {
-      height: 900px; } }
+      height: 800px; } }
   .aboutus .about-wrapper {
     width: 85%;
     letter-spacing: 0.5px;
@@ -1231,6 +1363,9 @@ footer {
     @media (max-width: 768px) {
       .slideshow-container .next {
         right: 600px; } }
+    @media (max-width: 575px) {
+      .slideshow-container .next {
+        right: 0px; } }
   .slideshow-container .prev:hover, .slideshow-container .next:hover {
     background-color: rgba(0, 0, 0, 0.8); }
   .slideshow-container .fade {

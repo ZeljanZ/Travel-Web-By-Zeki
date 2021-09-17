@@ -13,8 +13,15 @@
     @media (max-width:$md) {
         height:550px;
     }
+    @media (max-width:$sm) {
+        height:770px;
+        padding: 40px 0px 0px 4%;
+    }
     .wrapper{
         display: flex;
+        @media (max-width:$sm) {
+            flex-direction: column;
+        }
         
         .text-destination{
             padding-top: 4%;
@@ -29,6 +36,9 @@
             @media (max-width:$md) {
                 padding-top: 0%;
             }
+            @media (max-width:$sm) {
+                padding: 0;
+            }
             h2{
                 color: #66656510;
                 font-size: 6em;
@@ -37,7 +47,12 @@
                     font-size: 5em;
                 }
                 @media (max-width:$md) {
-                    font-size: 4.5-em;
+                    font-size: 4.5em;
+                }
+                @media (max-width:$sm) {
+                    font-size: 4.9em;
+                    text-align: center;
+                    margin-left: 30px;
                 }
             }
             h3{
@@ -55,6 +70,10 @@
                 @media (max-width:$md) {
                     font-size: 1.4em;
                 }
+                @media (max-width:$sm) {
+                    font-size: 1.7em;
+                    text-align: center;
+                }
             }
             p{
                 padding-top: 50px;
@@ -65,7 +84,19 @@
                 @media (max-width:$md) {
                     max-width: 330px;
                     padding-top: 30px;
-                }   
+                } 
+                @media (max-width:$sm) {
+                    font-size: 1em;
+                    text-align: center;
+                    padding: 20px 0 30px 0;
+                    margin: 0 auto;
+                    max-width: 450px;
+                }  
+            }
+            .button{
+                @media (max-width:$sm) {
+                    display: none;
+                }
             }
         }
 
@@ -80,6 +111,9 @@
             }
             @media (max-width:$md) {
                 margin-left: -190px;
+            }
+            @media (max-width:$sm) {
+                margin-left: -15px;
             }
         }
     }
