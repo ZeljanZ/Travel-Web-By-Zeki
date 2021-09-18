@@ -39,6 +39,7 @@ footer{
                         a{
                             color: $footer-txt-c;
                             &:hover{
+                                color: $white;
                                 text-decoration: underline;
                             }
                         }
@@ -47,7 +48,6 @@ footer{
             }
         }
     }
-    
 }
 .bottom-footer{
     display: flex;
@@ -74,6 +74,30 @@ footer{
         }
         @media (max-width:$sm) {
             margin-top: 8px;
+        }
+        span {
+            position: relative;
+            color:  $footer-txt-c;
+            text-decoration: underline;
+            cursor: pointer;
+        
+            &:hover:before {
+                opacity: 1;
+            }
+            &:before {
+                content: attr(aria-label);
+                opacity: 0;
+                position: absolute;
+                top: -50px;
+                right: 0px;
+                font-size: 13px;
+                width: 210px;
+                padding: 10px;
+                color: $white;
+                background-color: $primary-color;
+                border-radius: 3px;
+                pointer-events: none;
+            }
         }
     }
     .social{

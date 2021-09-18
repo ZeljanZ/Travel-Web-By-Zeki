@@ -315,35 +315,107 @@
             }
         }
     }
-    .social{
-        position: absolute;
-        bottom: 20px;
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @media (max-width:$sm) {
+    .social{ 
+            position: absolute;
             bottom: 0px;
-        }
-        li{
-            list-style: none;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            a{
-                display: inline-block;
-                filter: invert(1);//menja crnu ikonicu u belu boju
-                transform: scale(0.5);
-                transition: 0.5s;
+        .wrapper{
+            position: absolute;
+            bottom: 50px;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            @media (max-width:$sm) {
+                bottom: 0px;
+            }
 
-                &:hover{
-                    transform: scale(0.5) translateY(-25px);
-                }
+            .icon{
+                position: relative;
+                border-radius: 50%;
+                padding: 10px;
+                margin: 10px;
+                width: 50px;
+                height: 50px;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                cursor: pointer;
+
                 img{
-                    width: 60px;
+                    width: 34px;
+                    height: 34px;
+                    filter: invert(1);//menja crnu ikonicu u belu boju
+                    transition: 0.4s linear;
+                }
+                .tooltip{
+                    position: absolute;
+                    top: 0;
+                    font-size: 14px;
+                    color: $white;
+                    padding: 5px 8px;
+                    border-radius: 5px;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                }
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    transition:  0.4s linear;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    transition:  0.4s linear;
+                }
+
+                &:hover .tooltip {
+                    top:-45px;
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                }
+                &:hover .span, :hover .tooltip {
+                    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+                    transform: scale(.8);
+                    transition: 0.4s linear;
+                }
+                &:hover::before {
+                    border-radius: 50%;
+                    border-left: 4px solid;
+                    border-right: 4px solid;
+                    transform: skewX(20deg);
+                    color: $white;
+                }
+                &:hover::after {
+                    border-radius: 50%;
+                    border-top: 4px solid;
+                    border-bottom: 4px solid;
+                    transform: skewY(-20deg);
+                    color: $white;
                 }
             }
         }
     }
-    
+
     .right-text{
         position: absolute;
         bottom: 80px;

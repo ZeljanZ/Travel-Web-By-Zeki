@@ -315,7 +315,7 @@ a {
         color: #111; }
   .showcase .social {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -326,24 +326,108 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    @media (max-width: 575px) {
-      .showcase .social {
-        bottom: 0px; } }
-    .showcase .social li {
-      list-style: none; }
-      .showcase .social li a {
-        display: inline-block;
-        -webkit-filter: invert(1);
-                filter: invert(1);
-        -webkit-transform: scale(0.5);
-                transform: scale(0.5);
-        -webkit-transition: 0.5s;
-        transition: 0.5s; }
-        .showcase .social li a:hover {
-          -webkit-transform: scale(0.5) translateY(-25px);
-                  transform: scale(0.5) translateY(-25px); }
-        .showcase .social li a img {
-          width: 60px; }
+    .showcase .social .wrapper {
+      position: absolute;
+      bottom: 50px;
+      z-index: 10;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+      @media (max-width: 575px) {
+        .showcase .social .wrapper {
+          bottom: 0px; } }
+      .showcase .social .wrapper .icon {
+        position: relative;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        cursor: pointer; }
+        .showcase .social .wrapper .icon img {
+          width: 34px;
+          height: 34px;
+          -webkit-filter: invert(1);
+                  filter: invert(1);
+          -webkit-transition: 0.4s linear;
+          transition: 0.4s linear; }
+        .showcase .social .wrapper .icon .tooltip {
+          position: absolute;
+          top: 0;
+          font-size: 14px;
+          color: #ffff;
+          padding: 5px 8px;
+          border-radius: 5px;
+          opacity: 0;
+          pointer-events: none;
+          -webkit-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+        .showcase .social .wrapper .icon::before {
+          content: '';
+          position: absolute;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          -webkit-transition: 0.4s linear;
+          transition: 0.4s linear; }
+        .showcase .social .wrapper .icon::after {
+          content: '';
+          position: absolute;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          -webkit-transition: 0.4s linear;
+          transition: 0.4s linear; }
+        .showcase .social .wrapper .icon:hover .tooltip {
+          top: -45px;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto; }
+        .showcase .social .wrapper .icon:hover .span, .showcase .social .wrapper .icon :hover .tooltip {
+          text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+          -webkit-transform: scale(0.8);
+                  transform: scale(0.8);
+          -webkit-transition: 0.4s linear;
+          transition: 0.4s linear; }
+        .showcase .social .wrapper .icon:hover::before {
+          border-radius: 50%;
+          border-left: 4px solid;
+          border-right: 4px solid;
+          -webkit-transform: skewX(20deg);
+                  transform: skewX(20deg);
+          color: #ffff; }
+        .showcase .social .wrapper .icon:hover::after {
+          border-radius: 50%;
+          border-top: 4px solid;
+          border-bottom: 4px solid;
+          -webkit-transform: skewY(-20deg);
+                  transform: skewY(-20deg);
+          color: #ffff; }
   .showcase .right-text {
     position: absolute;
     bottom: 80px;
@@ -1205,6 +1289,7 @@ footer {
             footer .footer-wrapper .footer-links .row ul li a {
               color: #c5c1c1; }
               footer .footer-wrapper .footer-links .row ul li a:hover {
+                color: #ffff;
                 text-decoration: underline; }
 
 .bottom-footer {
@@ -1242,6 +1327,26 @@ footer {
     @media (max-width: 575px) {
       .bottom-footer p {
         margin-top: 8px; } }
+    .bottom-footer p span {
+      position: relative;
+      color: #c5c1c1;
+      text-decoration: underline;
+      cursor: pointer; }
+      .bottom-footer p span:hover:before {
+        opacity: 1; }
+      .bottom-footer p span:before {
+        content: attr(aria-label);
+        opacity: 0;
+        position: absolute;
+        top: -50px;
+        right: 0px;
+        font-size: 13px;
+        width: 210px;
+        padding: 10px;
+        color: #ffff;
+        background-color: #f05a28;
+        border-radius: 3px;
+        pointer-events: none; }
   .bottom-footer .social {
     position: relative;
     display: -webkit-box;

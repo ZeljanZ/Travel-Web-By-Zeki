@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <section class="showcase">
+    <section class="showcase" id="show">
         <header>
             <!-- <img class="logo" src="img/company-icon.png" alt=""> -->
             
@@ -18,10 +18,10 @@
 
                 <nav>
                     <ul class="tab-items">
-                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">Home</a></li>
-                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">Discover</a></li>
-                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">About us</a></li>
-                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">Contact</a></li>
+                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#show">Home</a></li>
+                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#destination">Discover</a></li>
+                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#about">About us</a></li>
+                        <li class="tab-item"><a class="item-link" onclick="select(this)" href="#contact">Contact</a></li>
                         <li class="tab-item"><a class="item-link" onclick="select(this)" href="#">Help</a></li>
                     </ul>
                 </nav>
@@ -61,16 +61,27 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur earum, 
                 totam in neque nemo, voluptates vitae, quis minus saepe.</p>
                 <div class="button">
-                    <a href="#">Explore All</a>
-                    <a href="#">Watch storie</a>
+                    <a href="#">Explore All <span></span><span></span><span></span><span></span></a>
+                    <a href="#">Watch storie <span></span><span></span><span></span><span></span></a>
                 </div>
         </div>
 
-        <ul class="social">
-            <li><a href=""><img src="img/icons8-facebook-48.png" alt="facebook"></a></li>
-            <li><a href=""><img src="img/icons8-instagram-logo-40.png" alt="instagram"></a></li>
-            <li><a href=""><img src="img/icons8-twitter-squared-40.png" alt="twiter"></a></li>
-        </ul>
+        <div class="social">
+            <div class="wrapper">
+                <div class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span><img src="img/icons8-facebook-48.png" alt="facebook"></span>
+                </div>
+                <div class="icon twitter">
+                    <div class="tooltip">Twitter</div>
+                    <span><img src="img/icons8-twitter-squared-40.png" alt="twiter"></span>
+                </div>
+                <div class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><img src="img/icons8-instagram-logo-40.png" alt="instagram"></span>
+                </div>
+            </div>
+        </div>
         
         <div class="right-text">
             <div class="text-normal">    
@@ -88,7 +99,7 @@
         </div>
     </section>
     <div class="clearfix"></div>
-    <section class="destinations">
+    <section class="destinations" id="destination">
         <div class="wrapper">
             <div class="text-destination">
                 <h2>Explore</h2>
@@ -104,41 +115,6 @@
             <div class="slider-destination">
                 <!-- Slideshow container -->
                 <div class="slideshow-container">
-                    <!-- Full-width images with number and caption text -->
-                    <!-- <div class="mySlides fade">
-                        <div class="img-container">
-                            <div class="img-wrapper">
-                                <label class="text1" for="img1">Vrsac, Serbia</label>
-                                <img id="img1" src="img/Vrsac.jpg">
-                            </div>
-                            <div class="img-wrapper">
-                                <label class="text2" for="img2">Novi Sad, Serbia</label>
-                                <img id="img2" src="img/NoviSad.jpg">
-                            </div>
-                            <div class="img-wrapper">
-                                <label class="text3" for="img3">Vaxjo, Sweden</label>
-                                <img id="img3" src="img/VaxjoSweden.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                        <div class="img-container">
-                            <div class="img-wrapper">
-                                <label class="text1" for="img4">Amsterdam, Holland</label>
-                                <img id="img4" src="img/amsterdam.jpg">
-                            </div>
-                            <div class="img-wrapper">
-                                <label class="text2" for="img5">Frankfurt,Germany</label>
-                                <img id="img5" src="img/frankfurt.jpg">
-                            </div>
-                            <div class="img-wrapper">
-                                <label class="text3" for="img6">Paris, France</label>
-                                <img id="img6" src="img/paris.jpg">
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- media Q-->
                     <div class="mySlides fade">
                         <div class="img-container" id="mediaMobi">
                             <div class="img-wrapper">
@@ -353,7 +329,7 @@
             </div>
         </div>
     </section>
-    <section class="aboutus">
+    <section class="aboutus" id="about">
         <div class="about-wrapper">
             <h2>I am page heading</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vitae sit itaque, provident quasi perspiciatis sequi laboriosam ab, 
@@ -374,7 +350,7 @@
                 a cupiditate! Reiciendis unde quod pariatur explicabo! Check it <a href="#">here</a>.</p>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <div class="contact-wrapper">
             <img src="/img/contactUS-crop.png" alt="contactUS">
@@ -438,7 +414,7 @@
     </footer>
     <div class="bottom-footer">
         <p> &#169; Company Name All rights reserved.</p>
-        <p>This page make Zeljan &Zopf;</p>
+        <p><span aria-label="This page is my exercise">This page is made Zeljan &Zopf;</span></p>
         <ul class="social">
             <li><a href=""><img src="img/icons8-facebook-48.png" alt="facebook"></a></li>
             <li><a href=""><img src="img/icons8-instagram-logo-40.png" alt="instagram"></a></li>
