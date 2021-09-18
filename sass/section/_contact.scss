@@ -1,13 +1,13 @@
 .contact{
     height: 100vh;
     width: 100%;
-    background-color: #f7f7f7 ;
+    background-color: $contact-bg-color;
     padding-top: 4%;
     
     h2{
         text-align: center;
         font-size: 2.2rem;
-        color: #4b4b4a;
+        color: $h2-color;
         padding-top: 1%;
     }
     .contact-wrapper{
@@ -40,7 +40,7 @@
                     padding: 30px 10px 10px 5px;
                     font-size: 17px;
                     font-weight: 600;
-                    color: #575756;
+                    color: $label-txt-c;
                     
                 }
                 input{
@@ -48,11 +48,11 @@
                     width: 150%;
                     padding: 20px;
                     border-radius: 5px;
-                    border: 1px solid #4747476e;
+                    border: 1px solid $input-border-c;
                     font-size: 17px;
-                    background-color:#f7f7f7;
+                    background-color: $input-bg-c;
                     &:hover{
-                        border: 2px solid #f05a28;
+                        border: 2px solid $primary-color;
                     }
                     @media (max-width:$sm) {
                         width: 120%;
@@ -63,12 +63,12 @@
                     width: 150%;
                     padding: 15px;
                     border-radius: 5px;
-                    border: 1px solid #47474767;
+                    border: 1px solid $input-border-c;
                     font-size: 17px;
-                    background-color:#f7f7f7;
+                    background-color: $input-bg-c;
 
                     &:hover{
-                        border: 2px solid #f05a28;
+                        border: 2px solid $primary-color;
                     }
                     @media (max-width:$sm) {
                         width: 120%;
@@ -81,10 +81,10 @@
                 }
                 p{
                     padding: 15px 30px;
-                    color: #575756;
+                    color: $label-txt-c;
                     a{
                         font-weight: 600;
-                        color: #f05a28;
+                        color: $primary-color;
                         &:hover{
                             text-decoration: underline;
                         }
@@ -97,15 +97,15 @@
                     margin-top: 20px;
                     padding: 10px 50px;
                     border-radius: 7px;
-                    border: 1px solid #f05a28;
-                    background-color: #f05a28;
+                    border: 1px solid $primary-color;
+                    background-color: $primary-color;
                     color: white;
                     font-size: 16px;
                     letter-spacing: 1px;
                     transition: 0.5s;
                     &:hover{
                         font-size: 17px;
-                        background-color: #df3800;
+                        background-color: $primary-hover-c;
                         letter-spacing: 3px;
                     }
                     

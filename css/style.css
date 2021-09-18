@@ -85,7 +85,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: white; }
+    background-color: #ffff; }
     @media (max-width: 1440px) {
       .showcase header {
         width: 100%;
@@ -182,11 +182,11 @@ a {
         .showcase header .menu-wrapper nav ul li a {
           text-decoration: none;
           margin: 0 10px;
-          color: black;
+          color: #111;
           font-weight: 700;
           padding: 33px 10px; }
           .showcase header .menu-wrapper nav ul li a:hover {
-            color: black; }
+            color: #111; }
           .showcase header .menu-wrapper nav ul li a:hover::before {
             width: 82%; }
           .showcase header .menu-wrapper nav ul li a:before {
@@ -225,12 +225,12 @@ a {
         .showcase header .login-wrapper ul li a {
           text-decoration: none;
           margin: 0 9px;
-          color: black;
+          color: #111;
           font-weight: 700;
           padding: 32px 15px; }
           .showcase header .login-wrapper ul li a:hover {
-            color: black;
-            background-color: #f1f1f1; }
+            color: #111;
+            background-color: #ffff; }
           .showcase header .login-wrapper ul li a:hover::before {
             width: 82%; }
           .showcase header .login-wrapper ul li a:before {
@@ -308,10 +308,10 @@ a {
     .showcase .text .button a:last-of-type {
       margin-left: 10px;
       background-color: rgba(255, 255, 255, 0) !important;
-      border: 1px solid white;
-      color: white; }
+      border: 1px solid #ffff;
+      color: #ffff; }
       .showcase .text .button a:last-of-type:hover {
-        background-color: #f1f1f1 !important;
+        background-color: #ffff !important;
         color: #111; }
   .showcase .social {
     position: absolute;
@@ -432,7 +432,7 @@ a {
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
       transform: rotate(-90deg);
-      color: white;
+      color: #ffff;
       position: absolute;
       left: 430px;
       top: 110px;
@@ -546,7 +546,7 @@ a {
       .destinations .wrapper .text-destination h3 {
         font-size: 2em;
         margin-top: -67px;
-        color: #575756de; }
+        color: #575756; }
         @media (max-width: 1440px) {
           .destinations .wrapper .text-destination h3 {
             font-size: 1.6em;
@@ -614,7 +614,7 @@ a {
     .summer-tours {
       height: 1480px; } }
   .summer-tours h2 {
-    color: white;
+    color: #ffff;
     font-size: 2.5em;
     font-weight: 500;
     padding: 3% 0px;
@@ -646,7 +646,7 @@ a {
       width: 47%;
       min-width: 900px;
       padding: 0px 10px;
-      background-color: white;
+      background-color: #ffff;
       margin-top: 2%;
       margin-left: 12%;
       border-radius: 5px;
@@ -694,7 +694,7 @@ a {
             -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
                     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459); } }
         .summer-tours .toures .toure:hover .price {
-          border-left: 10px dotted #56565741; }
+          border-left: 10px dotted #30308641; }
           @media (max-width: 575px) {
             .summer-tours .toures .toure:hover .price {
               border-left: none; } }
@@ -718,7 +718,7 @@ a {
       .summer-tours .toures .toure .text-wrapper {
         margin-top: 30px;
         padding-left: 5px;
-        color: #565657; }
+        color: #575756; }
         @media (max-width: 1024px) {
           .summer-tours .toures .toure .text-wrapper {
             margin-top: 20px; } }
@@ -772,7 +772,7 @@ a {
           margin-top: 10px;
           padding: 2px 17px;
           border-radius: 5px;
-          color: white;
+          color: #ffff;
           background-color: #87c5ec;
           font-weight: 600; }
           @media (max-width: 575px) {
@@ -861,7 +861,7 @@ a {
           display: block; } }
       .traveling-services .services-wrapper .services-holder .services-text {
         max-width: 40%;
-        color: white; }
+        color: #ffff; }
         @media (max-width: 1024px) {
           .traveling-services .services-wrapper .services-holder .services-text {
             max-width: 100%;
@@ -897,14 +897,14 @@ a {
         .traveling-services .services-wrapper .services-holder .services-text a {
           display: inline-block;
           margin-top: 10%;
-          color: white;
+          color: #ffff;
           padding: 10px 20px;
           border-radius: 5px;
           background-color: #f05a28;
           -webkit-transition: 0.4s;
           transition: 0.4s; }
           .traveling-services .services-wrapper .services-holder .services-text a:hover {
-            background-color: #e93d03;
+            background-color: #df3800;
             letter-spacing: 3px; }
           @media (max-width: 1440px) {
             .traveling-services .services-wrapper .services-holder .services-text a {
@@ -960,7 +960,7 @@ a {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
-          color: #fffefe;
+          color: #ffff;
           cursor: pointer;
           padding: 25px 30px;
           width: 90%;
@@ -1011,7 +1011,7 @@ a {
           content: '\002B';
           -webkit-transform: scale(1.2);
                   transform: scale(1.2);
-          color: #f8f7f7;
+          color: #ffff;
           font-weight: bold;
           float: right;
           margin-left: 5px;
@@ -1130,7 +1130,7 @@ a {
         width: 150%;
         padding: 15px;
         border-radius: 5px;
-        border: 1px solid #47474767;
+        border: 1px solid #4747476e;
         font-size: 17px;
         background-color: #f7f7f7; }
         .contact .contact-wrapper .forma-holder form textarea:hover {
@@ -1297,10 +1297,10 @@ footer {
               width: 310px;
               height: 380px; } }
         .slideshow-container .mySlides .img-container .img-wrapper .text1 {
-          color: #ffffff;
+          color: #ffff;
           font-size: 20px;
           font-weight: 600;
-          text-shadow: 2px 2px 10px black;
+          text-shadow: 2px 2px 10px #111;
           padding: 8px 12px;
           position: absolute;
           left: 20px;
@@ -1308,10 +1308,10 @@ footer {
           width: 100%;
           z-index: 10; }
         .slideshow-container .mySlides .img-container .img-wrapper .text2 {
-          color: #ffffff;
+          color: #ffff;
           font-size: 20px;
           font-weight: 600;
-          text-shadow: 2px 2px 10px black;
+          text-shadow: 2px 2px 10px #111;
           padding: 8px 12px;
           position: absolute;
           bottom: 20px;
@@ -1320,10 +1320,10 @@ footer {
           text-align: center;
           z-index: 10; }
         .slideshow-container .mySlides .img-container .img-wrapper .text3 {
-          color: #ffffff;
+          color: #ffff;
           font-size: 20px;
           font-weight: 600;
-          text-shadow: 2px 2px 10px black;
+          text-shadow: 2px 2px 10px #111;
           padding: 8px 12px;
           position: absolute;
           right: 130px;
@@ -1339,13 +1339,13 @@ footer {
     margin-left: 15px;
     margin-top: -42px;
     padding: 15px;
-    color: white;
+    color: #ffff;
     font-weight: bold;
     font-size: 30px;
     -webkit-transition: 0.6s ease;
     transition: 0.6s ease;
     border-radius: 0 10px 10px 0;
-    text-shadow: 2px 2px 10px black;
+    text-shadow: 2px 2px 10px #111;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -1353,7 +1353,7 @@ footer {
   .slideshow-container .next {
     right: 0px;
     border-radius: 10px 0 0 10px;
-    text-shadow: 2px 2px 10px black; }
+    text-shadow: 2px 2px 10px #111; }
     @media (max-width: 1440px) {
       .slideshow-container .next {
         right: 154px; } }

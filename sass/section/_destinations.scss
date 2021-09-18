@@ -1,7 +1,6 @@
 .destinations{
     height: 700px;
-    background-color: #f7f7f7;
-    // background-color: white;
+    background-color: $input-bg-c;
     z-index: 0;
     padding: 120px 0px 200px 10%;
     @media (max-width:$xl) {
@@ -58,7 +57,7 @@
             h3{
                 font-size: 2em;
                 margin-top: -67px;
-                color: #575756de;
+                color: $label-txt-c;
                 @media (max-width:$xl) {
                     font-size: 1.6em;
                     margin-top: -58px;

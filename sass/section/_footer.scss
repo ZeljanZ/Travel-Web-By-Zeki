@@ -1,7 +1,7 @@
 footer{
     height: 45vh;
     width: 100%;
-    background-color: #318c8c;
+    background-color: $footer-bg-c;
     padding: 5% 10%;
     @media (max-width:$lg) {
         display: none;
@@ -17,7 +17,7 @@ footer{
             }
             p{
                 margin-bottom: 20px;
-                color: #c5c1c1;
+                color: $footer-txt-c;
             }
         }
         .footer-links{
@@ -37,7 +37,7 @@ footer{
                         width: 230px;
 
                         a{
-                            color: #c5c1c1;
+                            color: $footer-txt-c;
                             &:hover{
                                 text-decoration: underline;
                             }
@@ -52,7 +52,7 @@ footer{
 .bottom-footer{
     display: flex;
     justify-content: space-around;
-    background-color: #2f797a;
+    background-color: $footer-bott-bg-c;
     padding: 20px;
     height: 70px;
     @media (max-width:$lg) {
@@ -67,7 +67,7 @@ footer{
 
     }
     p{
-        color: #c5c1c1;
+        color: $footer-txt-c;
         letter-spacing: 1px;
         @media (max-width:$lg) {
             letter-spacing: 0px;

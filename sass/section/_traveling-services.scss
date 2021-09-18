@@ -33,7 +33,7 @@
         height: 515px;
         width:70%;
         margin: 130px 15% 0px 15%;
-        background-color: #f7b64e;
+        background-color: $service-bg-c;
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
         
@@ -66,7 +66,7 @@
             }
             .services-text{
                 max-width: 40%;
-                color: white;
+                color: $white;
                 @media (max-width:$lg) {
                     max-width: 100%;
                     text-align: center;
@@ -106,13 +106,13 @@
                 a{
                     display: inline-block;
                     margin-top: 10%;
-                    color: white;
+                    color: $white;
                     padding: 10px 20px;
                     border-radius: 5px;
-                    background-color: #f05a28;
+                    background-color: $primary-color;
                     transition: 0.4s;
                     &:hover{
-                        background-color: #e93d03;
+                        background-color: $primary-hover-c;
                         letter-spacing: 3px;
                     }
                     @media (max-width:$xl) {
@@ -173,7 +173,7 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
-                    color: rgb(255, 254, 254);
+                    color: $white;
                     cursor: pointer;
                     padding:25px 30px;
                     width: 90%;
@@ -229,7 +229,7 @@
                     .accordion:after {
                         content: '\002B';
                         transform: scale(1.2);
-                        color: rgb(248, 247, 247);
+                        color: $white;
                         font-weight: bold;
                         float: right;
                         margin-left: 5px;
